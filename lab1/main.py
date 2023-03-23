@@ -1,6 +1,10 @@
-import dijkstra
-from astar import astar
 import csv
+from datetime import time
+from typing import List
+from enum import Enum
+from dijkstra import *
+# from astar import *
+from Utils import *
 
 '''Deadline na środę 22.03 godzina 7:30
 
@@ -15,14 +19,34 @@ Na sprawko:
     - Wszelkie uzasadnienia w sprawku czemu rozwiązanie jest super mile widziane, 
 '''
 
-def main():
 
+def task1(start: str, end: str, criteria: Criteria, start_time: time) -> None:
+    data = load_csv()
+
+    graph = Graph(data, start_time)
+    start = graph.get_node(start)
+    end = graph.get_node(end)
+
+    cost, path = shortest_path(graph, start, end)
+    print_result(cost, path, start_time)
+
+
+def print_result(cost, path, start_time: time) -> None:
+    time = start_time
+    previousNode = path[0]
+    for node in path[1:]:
+        print(previousNode.edges[node])
+
+
+def task2(graph):
     pass
 
-def load_csv(filename: str = 'connection_graph.csv') -> dijkstra.Graph:
-    with open(filename, 'r') as f:
-        writer = csv.writer()
+
+def main():
+    task1('Krzyki', 'Rymarksa', Criteria.t, time(19, 58, 0))
+    # task2(graph)
+    #   def __new__(cls, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0):
+
 
 if __name__ == '__main__':
     main()
-
