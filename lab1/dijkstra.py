@@ -5,15 +5,15 @@ from typing import List, Tuple
 
 
 def dijkstra(graph: Graph, criteria: Criteria, start: Node):
-    costs = {node: float('inf') for node in graph.graph_dict}
+    costs = {node: float('inf') for node in graph.nodes}
     costs[start] = 0
     pq = [(0, start)]
-    prev_nodes = {node: None for node in graph.graph_dict}
+    prev_nodes = {node: None for node in graph.nodes}
     while pq:
         curr_cost, curr_node = heapq.heappop(pq)
         if curr_cost > costs[curr_node]:
             continue
-        for route in graph.graph_dict[curr_node]:
+        for neighbour, edges in graph.nodes[curr_node].items():
             if route.time_since_time_zero < curr_cost:
                 continue
             waiting_time = route.time_since_time_zero - curr_cost

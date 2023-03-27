@@ -17,7 +17,15 @@ Na sprawko:
     - Zestawienie wyników finalnych, czyli wynik testów na zbiorze,
     - poza kodem załączyć niestandardwoe biblioteki (wystarczą requirements.txt),
     - Wszelkie uzasadnienia w sprawku czemu rozwiązanie jest super mile widziane, 
+    
+Review po 23.03 do sprawek:
+    - Robić jak inżynierkę (podobne zasady),
+    - podpisywać wykresy, schematy, tabele, pisać uzasadnienie po co jest ta tabela,
+    
+    
 '''
+
+
 
 
 def task1(start: str, end: str, criteria: Criteria, start_time: time) -> None:

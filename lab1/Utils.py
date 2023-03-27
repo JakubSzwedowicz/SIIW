@@ -50,10 +50,6 @@ def load_csv(filename: str = 'connection_graph.csv') -> List[tuple]:
 class Node:
     def __init__(self, name: str):
         self.name = name
-        self.edges: Dict[Node, Edge] = {}
-
-    def add_edge(self, edge):
-        self.edges[edge.stop] = edge
 
     def __hash__(self):
         return hash(self.name)
@@ -72,13 +68,9 @@ class Edge:
         self.arrival_time = arrival_time
         self.time_since_time_zero = calc_sec(time_zero, departure_time)
         self.cost = calc_sec(departure_time, arrival_time)
-        start.add_edge(self)
 
-    def __hash__(self):
-        return hash((self.start, self.stop, self.departure_time))
-
-    def __eq__(self, other):
-        return self.start == other.start and self.stop == other.stop and self.departure_time == other.departure_time
+    def __lt__(self, other):
+        return self.departure_time < other.departure_time
 
     def __repr__(self):
         return f'line: "{self.line.name}", departure bus stop: "{self.start.name}", departure time: "{self.departure_time}", arrival bus stop: "{self.stop.name}", arrival time: "{self.arrival_time}'
@@ -99,8 +91,11 @@ class Line:
 
 class Graph:
     def __init__(self, csv_data: List[Tuple], time_zero):
-        self.edges: Set[Edge] = set()
-        self.graph_dict: Dict[Node, List[Tuple[int, Edge]]] = {}
+        self.nodes: Dict[Node, Dict[Node, List[Edge]]] = {}
+        self._build_nodes(csv_data, time_zero)
+
+
+    def _build_nodes(self, csv_data: List[Tuple], time_zero: time):
         for row in csv_data:
             start: Node = Node(row[indice_start])
             end: Node = Node(row[indice_end])
@@ -108,13 +103,14 @@ class Graph:
             end_arrival: datetime.time = row[indice_arrival_time]
 
             edge = Edge(time_zero, start, end, start_departure, end_arrival)
+            self.nodes[start][end].append(edge)
 
-            start.add_edge(edge)
-            self.edges.add(edge)
-            heapq.heappush(self.graph_dict[start], (edge.cost + edge.time_since_time_zero, edge))
+    def _sort_edges(self):
+        for neighbour, edges in self.nodes.values():
 
-    def get_node(self, name: str) -> Optional[Node]:
-        return self.graph_dict[Node(name)][0][1].start if len(self.graph_dict[Node(name)]) != 0 else None
+
+    # def get_node(self, name: str) -> Optional[Node]:
+    #     return self.graph_dict[Node(name)][0][1].start if len(self.graph_dict[Node(name)]) != 0 else None
 
 
 def calc_sec(start: datetime.time, end: datetime.time) -> int:
