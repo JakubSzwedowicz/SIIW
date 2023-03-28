@@ -1,38 +1,42 @@
 import heapq
 from datetime import datetime
-from Utils import Graph, Edge, Criteria, Node
-from typing import List, Tuple
+from Utils import Graph, Edge, Criteria
+from typing import List, Tuple, Dict
 
 
-def dijkstra(graph: Graph, criteria: Criteria, start: Node):
+def dijkstra(graph: Graph, criteria: Criteria, start: str) -> Tuple[Dict[str, float], Dict[str, Edge]]:
     costs = {node: float('inf') for node in graph.nodes}
     costs[start] = 0
     pq = [(0, start)]
-    prev_nodes = {node: None for node in graph.nodes}
+    edge_to_node = {node: None for node in graph.nodes}
     while pq:
         curr_cost, curr_node = heapq.heappop(pq)
         if curr_cost > costs[curr_node]:
             continue
         for neighbour, edges in graph.nodes[curr_node].items():
-            if route.time_since_time_zero < curr_cost:
-                continue
-            waiting_time = route.time_since_time_zero - curr_cost
-            new_cost = curr_cost + route.cost + waiting_time
-            if new_cost < costs[route.stop]:
-                costs[route.stop] = new_cost
-                prev_nodes[route.stop] = curr_node
-                heapq.heappush(pq, (new_cost, route.stop))
-    return costs, prev_nodes
+            new_node = None
+            for edge in edges:
+                if edge.time_since_time_zero < curr_cost:
+                    continue
+                waiting_time = edge.time_since_time_zero - curr_cost
+                new_cost = curr_cost + edge.cost + waiting_time
+                if new_cost < costs[edge.stop]:
+                    costs[edge.stop] = new_cost
+                    edge_to_node[edge.stop] = edge
+                    new_node = (new_cost, edge.stop)
+                    break;
+            if new_node is not None:
+                heapq.heappush(pq, new_node)
+    return costs, edge_to_node
 
 
-def shortest_path(graph: Graph, start: Node, goal: Node) -> Tuple[float, List[Node]]:
-    costs, prev_nodes = dijkstra(graph, Criteria.t, start)
-    path: List[Node] = []
-    curr_node: Node = goal
-    while curr_node is not None:
-        path.append(curr_node)
-        curr_node = prev_nodes[curr_node]
-    path.append(start)
+def shortest_path(graph: Graph, start: str, goal: str) -> Tuple[float, List[Edge]]:
+    costs, edge_to_node = dijkstra(graph, Criteria.t, start)
+    path: List[Edge] = []
+    curr_node: str = goal
+    while curr_node != start:
+        path.append(edge_to_node[curr_node])
+        curr_node = edge_to_node[curr_node].start
     path.reverse()
     return costs[goal], path
 
