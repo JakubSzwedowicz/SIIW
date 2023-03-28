@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1886d8f4-6433-40b4-8b3b-04cd5ecb6000" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/SIIW.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SIIW.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab1/Utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/Utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab1/dijkstra.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/dijkstra.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab1/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab1" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev\University\SIIW\lab1" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -91,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679426291180</updated>
       <workItem from="1679426311414" duration="28384000" />
-      <workItem from="1679946247441" duration="10070000" />
+      <workItem from="1679946247441" duration="13376000" />
     </task>
     <servers />
   </component>
@@ -119,38 +123,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1177" y="439" key="#xdebugger.evaluate/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679952339020" />
-    <state width="1092" height="381" key="GridCell.Tab.0.bottom" timestamp="1679963340844">
+    <state width="1089" height="381" key="GridCell.Tab.0.bottom" timestamp="1679966788124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1092" height="381" key="GridCell.Tab.0.bottom/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679963340844" />
-    <state width="1092" height="381" key="GridCell.Tab.0.center" timestamp="1679963340844">
+    <state width="1089" height="381" key="GridCell.Tab.0.bottom/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679966788124" />
+    <state width="1089" height="381" key="GridCell.Tab.0.center" timestamp="1679966788123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1092" height="381" key="GridCell.Tab.0.center/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679963340844" />
-    <state width="1092" height="381" key="GridCell.Tab.0.left" timestamp="1679963340844">
+    <state width="1089" height="381" key="GridCell.Tab.0.center/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679966788123" />
+    <state width="1089" height="381" key="GridCell.Tab.0.left" timestamp="1679966788123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1092" height="381" key="GridCell.Tab.0.left/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679963340844" />
-    <state width="1092" height="381" key="GridCell.Tab.0.right" timestamp="1679963340844">
+    <state width="1089" height="381" key="GridCell.Tab.0.left/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679966788123" />
+    <state width="1089" height="381" key="GridCell.Tab.0.right" timestamp="1679966788124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1092" height="381" key="GridCell.Tab.0.right/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679963340844" />
-    <state width="1204" height="390" key="GridCell.Tab.1.bottom" timestamp="1679962812037">
+    <state width="1089" height="381" key="GridCell.Tab.0.right/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679966788124" />
+    <state width="1201" height="390" key="GridCell.Tab.1.bottom" timestamp="1679965663172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="390" key="GridCell.Tab.1.bottom/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679962812037" />
-    <state width="1204" height="390" key="GridCell.Tab.1.center" timestamp="1679962812037">
+    <state width="1201" height="390" key="GridCell.Tab.1.bottom/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679965663172" />
+    <state width="1201" height="390" key="GridCell.Tab.1.center" timestamp="1679965663172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="390" key="GridCell.Tab.1.center/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679962812037" />
-    <state width="1204" height="390" key="GridCell.Tab.1.left" timestamp="1679962812037">
+    <state width="1201" height="390" key="GridCell.Tab.1.center/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679965663172" />
+    <state width="1201" height="390" key="GridCell.Tab.1.left" timestamp="1679965663172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="390" key="GridCell.Tab.1.left/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679962812037" />
-    <state width="1204" height="390" key="GridCell.Tab.1.right" timestamp="1679962812037">
+    <state width="1201" height="390" key="GridCell.Tab.1.left/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679965663172" />
+    <state width="1201" height="390" key="GridCell.Tab.1.right" timestamp="1679965663172">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1204" height="390" key="GridCell.Tab.1.right/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679962812037" />
+    <state width="1201" height="390" key="GridCell.Tab.1.right/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679965663172" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1679953493216">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -163,6 +167,10 @@
       <screen x="1920" y="54" width="1280" height="984" />
     </state>
     <state x="1915" y="254" width="1296" height="717" key="dock-window-1/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679434877206" />
+    <state x="803" y="305" key="refactoring.ChangeSignatureDialog" timestamp="1679963741739">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="803" y="305" key="refactoring.ChangeSignatureDialog/1920.54.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1679963741739" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1679443454577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -173,18 +181,23 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lab1/dijkstra.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="26" />
+          <line>46</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/lab1/dijkstra.py</url>
           <line>35</line>
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/lab1/dijkstra.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SIIW$main.coverage" NAME="main Coverage Results" MODIFIED="1679963340838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1" />
+    <SUITE FILE_PATH="coverage/SIIW$main.coverage" NAME="main Coverage Results" MODIFIED="1679966788119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab1" />
   </component>
 </project>

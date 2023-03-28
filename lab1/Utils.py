@@ -23,6 +23,9 @@ class Criteria(Enum):
     p = 1
 
 
+
+
+
 def clear_row(row: list) -> list:
     bad_time1: str = row[indice_departure_time]
     bad_time2: str = row[indice_arrival_time]
@@ -31,7 +34,7 @@ def clear_row(row: list) -> list:
     return [*row[:indice_departure_time], bad_time1, bad_time2, *row[indice_arrival_time + 1:]]
 
 
-def load_csv(filename: str = 'connection_graph.csv') -> List[tuple]:
+def load_csv(filename: str = 'connection_graph_short.csv') -> List[tuple]:
     with open(filename, newline='', encoding='utf-8') as f:
         next(f)
         reader = csv.reader(f, delimiter=',')
@@ -91,11 +94,11 @@ class Edge:
 
 class Graph:
     def __init__(self, csv_data: List[Tuple], time_zero):
-        self.nodes: Dict[str, Dict[str, List[Edge]]] = {}
-        self._build_nodes(csv_data, time_zero)
+        self.lines: Dict[str, Dict[str, Dict[str, List[Edge]]]] = {} # line : Dict[start_node: [end_node, edges]]
+        self._build_graph(csv_data, time_zero)
         self._sort_edges()
 
-    def _build_nodes(self, csv_data: List[Tuple], time_zero: time):
+    def _build_graph(self, csv_data: List[Tuple], time_zero: time):
         for row in csv_data:
             start: str = row[indice_start]
             end: str = row[indice_end]
@@ -104,22 +107,26 @@ class Graph:
             end_arrival: datetime.time = row[indice_arrival_time]
 
             edge = Edge(time_zero, start, end, line, start_departure, end_arrival)
-            if start not in self.nodes:
-                self.nodes[start] = {}
+            if line not in self.lines:
+                self.lines[line] = {}
+                
+            if start not in self.lines[line]:
+                self.lines[line][start] = {}
 
-            if end not in self.nodes:
-                self.nodes[end] = {}
+            if end not in self.lines[line]:
+                self.lines[line][end] = {}
 
-            if end not in self.nodes[start]:
-                self.nodes[start][end] = []
+            if end not in self.lines[line][start]:
+                self.lines[line][start][end] = []
 
-            self.nodes[start][end].append(edge)
+            self.lines[line][start][end].append(edge)
 
     def _sort_edges(self):
-        for node, neighbours in self.nodes.items():
-            for neighbour, edges_to_neighbour in neighbours.items():
-                edges_to_neighbour.sort()
-        print("Hello")
+        for line, nodes in self.lines.items():
+            for node, neighbours in nodes.items():
+                for neighbour, edges_to_neighbour in neighbours.items():
+                    edges_to_neighbour.sort()
+            print("Hello")
 
     # def get_node(self, name: str) -> Optional[Node]:
     #     return self.graph_dict[Node(name)][0][1].start if len(self.graph_dict[Node(name)]) != 0 else None
