@@ -1,5 +1,5 @@
 import csv
-from datetime import time
+from datetime import time, datetime, date
 from typing import List
 from enum import Enum
 from dijkstra import *
@@ -37,11 +37,6 @@ def task1(start: str, end: str, criteria: Criteria, start_time: time) -> None:
     print_result(path, start_time)
 
 
-def print_result(path: List[Edge], start_time: time) -> None:
-    time = start_time
-    previousNode = path[0]
-    for edge in path:
-        print(edge)
 
 
 def task2(graph):
@@ -49,7 +44,7 @@ def task2(graph):
 
 
 def main():
-    task1('KRZYKI', 'Rymarska', Criteria.t, time(19, 58, 0))
+    task1('KRZYKI', 'ZOO', Criteria.t, time(19, 58, 0))
     # task2(graph)
     #   def __new__(cls, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0):
 

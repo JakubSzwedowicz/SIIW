@@ -1,4 +1,4 @@
-from datetime import datetime, time
+from datetime import datetime, time, date
 from typing import Dict, List, Tuple, Set, Optional
 import csv
 from enum import Enum
@@ -21,9 +21,6 @@ indice_end_lon = 10
 class Criteria(Enum):
     t = 0
     p = 1
-
-
-
 
 
 def clear_row(row: list) -> list:
@@ -126,7 +123,6 @@ class Graph:
             for node, neighbours in nodes.items():
                 for neighbour, edges_to_neighbour in neighbours.items():
                     edges_to_neighbour.sort()
-            print("Hello")
 
     # def get_node(self, name: str) -> Optional[Node]:
     #     return self.graph_dict[Node(name)][0][1].start if len(self.graph_dict[Node(name)]) != 0 else None
@@ -142,3 +138,13 @@ def calc_sec(start: datetime.time, end: datetime.time) -> int:
     else:
         diff = end_sec - start_sec
         return diff
+
+
+def print_result(path: List[Edge], start_time: time) -> None:
+    start_datetime = datetime.combine(date.today(), start_time)
+    end_datetime = datetime.combine(date.today(), path[-1].arrival_time)
+    total_time = end_datetime - start_datetime
+    lines = set([edge.line for edge in path])
+    for edge in path:
+        print(edge)
+    print(f'Whole trip will take {total_time.seconds / 60} minues across {len(lines)} lines')
