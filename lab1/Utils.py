@@ -61,18 +61,26 @@ class Node:
 
 
 class Edge:
-    def __init__(self, time_zero: time, start: str, end: str, line: str, departure_time: time,
+    def __init__(self, start: str, end: str, line: str, departure_time: time,
                  arrival_time: time):
         self.start: str = start
         self.stop: str = end
         self.line: str = line
         self.departure_time = departure_time
         self.arrival_time = arrival_time
-        self.time_since_time_zero = calc_sec(time_zero, departure_time)
+        self._time_since_time_zero = None
         self.cost = calc_sec(departure_time, arrival_time)
 
+    def clear_time_since_zero(self):
+        self._time_since_time_zero = None
+
+    def time_since_time_zero(self, time_zero: time):
+        if self._time_since_time_zero is None:
+            self._time_since_time_zero = calc_sec(time_zero, self.departure_time)
+        return self._time_since_time_zero
+
     def __lt__(self, other):
-        return self.time_since_time_zero < other.time_since_time_zero
+        return self.departure_time < other.departure_time
 
     def __repr__(self):
         return f'line: "{self.line}", departure bus stop: "{self.start}", departure time: "{self.departure_time}", arrival bus stop: "{self.stop}", arrival time: "{self.arrival_time}'
@@ -92,13 +100,20 @@ class Edge:
 
 
 class Graph:
-    def __init__(self, csv_data: List[Tuple], time_zero):
+    def __init__(self, csv_data: List[Tuple]):
         self.lines: Dict[str, Dict[str, Dict[str, List[Edge]]]] = {} # line : Dict[start_node: [end_node, edges]]
         self.nodes: Dict[str, Node] = {}
-        self._build_graph(csv_data, time_zero)
+        self._build_graph(csv_data)
         self._sort_edges()
 
-    def _build_graph(self, csv_data: List[Tuple], time_zero: time):
+    def clear_time_since_zero(self):
+        for nodes in self.lines.values():
+            for node in nodes.values():
+                for edges in node.values():
+                    for edge in edges:
+                        edge.clear_time_since_zero()
+
+    def _build_graph(self, csv_data: List[Tuple]):
         for row in csv_data:
             start: str = row[indice_start]
             end: str = row[indice_end]
@@ -106,7 +121,7 @@ class Graph:
             start_departure: datetime.time = row[indice_departure_time]
             end_arrival: datetime.time = row[indice_arrival_time]
 
-            edge = Edge(time_zero, start, end, line, start_departure, end_arrival)
+            edge = Edge(start, end, line, start_departure, end_arrival)
             if line not in self.lines:
                 self.lines[line] = {}
                 
@@ -131,11 +146,6 @@ class Graph:
             for node, neighbours in nodes.items():
                 for neighbour, edges_to_neighbour in neighbours.items():
                     edges_to_neighbour.sort()
-
-    # def neighbours(self, node: str) -> List[str]:
-
-    # def get_node(self, name: str) -> Optional[Node]:
-    #     return self.graph_dict[Node(name)][0][1].start if len(self.graph_dict[Node(name)]) != 0 else None
 
 
 def calc_sec(start: datetime.time, end: datetime.time) -> int:
