@@ -164,7 +164,14 @@ def print_result(path: List[Edge], start_time: time) -> None:
     start_datetime = datetime.combine(date.today(), start_time)
     end_datetime = datetime.combine(date.today(), path[-1].arrival_time)
     total_time = end_datetime - start_datetime
-    lines = set([edge.line for edge in path])
+    line_changes = 0
+    if path is not None:
+        line_of_prev_edge = path[0].line
+        for edge in path:
+            if edge.line != line_of_prev_edge:
+                line_changes += 1
+                line_of_prev_edge = edge.line
+
     for edge in path:
         print(edge)
-    print(f'Whole trip will take {total_time.seconds / 60} minues across {len(lines)} lines')
+    print(f'Whole trip will take {total_time.seconds / 60} minues across {len({edge.line for edge in path})} lines and {line_changes} line changes')

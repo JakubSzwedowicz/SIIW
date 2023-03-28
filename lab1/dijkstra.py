@@ -8,33 +8,6 @@ def dijkstra(graph: Graph, start: str, goal: str, time_zero: time) -> Tuple[floa
     return _dijkstra_shortest_path(graph, start, goal, time_zero)
 
 
-class CriteriaEnforcer:
-    def __init__(self, criteria: Criteria, graph: Graph, start: str):
-        self.criteria = criteria
-        self.edge_to_node = {node: None for nodes in graph.lines.values() for node in nodes}  # Pythonic code
-        if self.criteria == Criteria.t:
-            self._init_by_time(graph, start)
-        elif self.criteria == Criteria.p:
-            self._init_by_lines(graph, start)
-        else:
-            raise Exception(f'Critical error with invalid criteria value: "{criteria}"!')
-
-    def _init_by_time(self, graph: Graph, start: str):
-        self.costs = {node: float('inf') for nodes in graph.lines.values() for node in nodes}  # Pythonic code
-        self.costs[start] = 0
-
-    def _init_by_lines(self, graph: Graph, start: str):
-        self.costs = {node: int(1000000) for nodes in graph.lines.values() for node in nodes}  # Pythonic code
-        self.lines_to_node: Dict[str: List[str]] = {node: None for nodes in graph.lines.values() for node in nodes}  # Pythonic code
-        self.costs[start] = 0
-
-    # def compare_is_left_lower(self, left: Edge, right: [float, str]) -> bool:
-    #     if self.criteria == Criteria.t:
-    #         return left.time_since_time_zero < right
-    #     elif self.criteria == Criteria.p:
-    #         return left.
-
-
 def _dijkstra_shortest_path(graph: Graph, start: str, goal: str, time_zero: time) -> Tuple[float, List[Edge]]:
     costs, edge_to_node = _dijkstra_time(graph, start, time_zero)
     path: List[Edge] = []

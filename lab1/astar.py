@@ -66,7 +66,7 @@ def _astar_time(graph: Graph, start: str, goal: str, time_zero: time, heurestic_
     while pq:
         _, curr_time, curr_node = heapq.heappop(pq)
         if curr_node == goal:
-            return f_costs, edge_to_node
+            return g_costs, edge_to_node
 
         if curr_time > g_costs[curr_node]:
             continue
@@ -103,8 +103,11 @@ def _astar_lines(graph: Graph, start: str, goal: str, time_zero: time, heurestic
 
     # priority, curr_line, node
     pq = [(0, '', start)]
-    while pq[0][2] != goal:
+    while pq:
         curr_cost_lines, curr_line, curr_node = heapq.heappop(pq)
+
+        if curr_node == goal:
+            return f_costs, edge_to_node
 
         best_new_nodes: Dict[str, (float, float)] = {}
         # Dict[str, Dict[str, Dict[str, List[Edge]]]] = {}  # line : Dict[start_node: [end_node, edges]]
