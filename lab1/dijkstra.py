@@ -4,22 +4,39 @@ from Utils import Graph, Edge, Criteria
 from typing import List, Tuple, Dict
 
 
-# class CriteriaEnforcer:
-#     def __init__(self, criteria: Criteria, graph: Graph):
-#         self.criteria = criteria
-#
-#     def _init_by_time(self, graph: Graph):
-#         self.costs = {node: float('inf') for node in graph.nodes}
-#
-#     def _init_by_lines(self, graph: Graph):
+class CriteriaEnforcer:
+    def __init__(self, criteria: Criteria, graph: Graph, start: str):
+        self.criteria = criteria
+        self.edge_to_node = {node: None for nodes in graph.lines.values() for node in nodes}  # Pythonic code
+        if self.criteria == Criteria.t:
+            self._init_by_time(graph, start)
+        elif self.criteria == Criteria.p:
+            self._init_by_lines(graph, start)
+        else:
+            raise Exception(f'Critical error with invalid criteria value: "{criteria}"!')
+
+    def _init_by_time(self, graph: Graph, start: str):
+        self.costs = {node: float('inf') for nodes in graph.lines.values() for node in nodes}  # Pythonic code
+        self.costs[start] = 0
+
+
+    def _init_by_lines(self, graph: Graph, start: str):
+        self.costs = {node: int(1000000) for nodes in graph.lines.values() for node in nodes}  # Pythonic code
+        self.lines_to_node: Dict[str: List[str]] = {node: None for nodes in graph.lines.values() for node in nodes}  # Pythonic code
+        self.costs[start] = 0
+
+    # def compare_is_left_lower(self, left: Edge, right: [float, str]) -> bool:
+    #     if self.criteria == Criteria.t:
+    #         return left.time_since_time_zero < right
+    #     elif self.criteria == Criteria.p:
+    #         return left.
+
 
 def dijkstra(graph: Graph, criteria: Criteria, start: str) -> Tuple[Dict[str, float], Dict[str, Edge]]:
     # Dict[str, Dict[str, Dict[str, List[Edge]]]] = {}  # line : Dict[start_node: [end_node, edges]]
-    # costs = {node: float('inf') for line in graph.lines for node in line}  # Pythonic code
     costs = {node: float('inf') for nodes in graph.lines.values() for node in nodes}  # Pythonic code
-    costs[start] = 0
-    pq = [(0, start)]
     edge_to_node = {node: None for nodes in graph.lines.values() for node in nodes}  # Pythonic code
+    pq = [(0, start)]
     while pq:
         curr_cost, curr_node = heapq.heappop(pq)
         if curr_cost > costs[curr_node]:
@@ -42,7 +59,7 @@ def dijkstra(graph: Graph, criteria: Criteria, start: str) -> Tuple[Dict[str, fl
     return costs, edge_to_node
 
 
-def shortest_path(graph: Graph, start: str, goal: str) -> Tuple[float, List[Edge]]:
+def dijkstra_shortest_path(graph: Graph, start: str, goal: str) -> Tuple[float, List[Edge]]:
     costs, edge_to_node = dijkstra(graph, Criteria.t, start)
     path: List[Edge] = []
     curr_node: str = goal

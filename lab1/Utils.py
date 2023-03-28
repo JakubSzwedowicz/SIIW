@@ -31,7 +31,7 @@ def clear_row(row: list) -> list:
     return [*row[:indice_departure_time], bad_time1, bad_time2, *row[indice_arrival_time + 1:]]
 
 
-def load_csv(filename: str = 'connection_graph_short.csv') -> List[tuple]:
+def load_csv(filename: str = 'connection_graph.csv') -> List[tuple]:
     with open(filename, newline='', encoding='utf-8') as f:
         next(f)
         reader = csv.reader(f, delimiter=',')
@@ -47,15 +47,17 @@ def load_csv(filename: str = 'connection_graph_short.csv') -> List[tuple]:
         return data
 
 
-# class Node:
-#     def __init__(self, name: str):
-#         self.name = name
-#
-#     def __hash__(self):
-#         return hash(self.name)
-#
-#     def __eq__(self, other):
-#         return self.name == other.name
+class Node:
+    def __init__(self, name: str, latitude: float, lontitude: float):
+        self.name = name
+        self.lat = latitude
+        self.lon = lontitude
+
+    def __hash__(self):
+        return hash(self.name)
+
+    def __eq__(self, other):
+        return self.name == other.name
 
 
 class Edge:
@@ -92,6 +94,7 @@ class Edge:
 class Graph:
     def __init__(self, csv_data: List[Tuple], time_zero):
         self.lines: Dict[str, Dict[str, Dict[str, List[Edge]]]] = {} # line : Dict[start_node: [end_node, edges]]
+        self.nodes: Dict[str, Node] = {}
         self._build_graph(csv_data, time_zero)
         self._sort_edges()
 
@@ -118,11 +121,18 @@ class Graph:
 
             self.lines[line][start][end].append(edge)
 
+            if start not in self.nodes:
+                self.nodes[start] = Node(start, row[indice_start_lat], row[indice_start_lon])
+            if end not in self.nodes:
+                self.nodes[end] = Node(end, row[indice_end_lat], row[indice_end_lon])
+
     def _sort_edges(self):
         for line, nodes in self.lines.items():
             for node, neighbours in nodes.items():
                 for neighbour, edges_to_neighbour in neighbours.items():
                     edges_to_neighbour.sort()
+
+    # def neighbours(self, node: str) -> List[str]:
 
     # def get_node(self, name: str) -> Optional[Node]:
     #     return self.graph_dict[Node(name)][0][1].start if len(self.graph_dict[Node(name)]) != 0 else None

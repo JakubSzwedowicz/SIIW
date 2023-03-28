@@ -3,8 +3,9 @@ from datetime import time, datetime, date
 from typing import List
 from enum import Enum
 from dijkstra import *
-# from astar import *
+from astar import *
 from Utils import *
+import timeit
 
 '''Deadline na środę 22.03 godzina 7:30
 
@@ -25,27 +26,36 @@ Review po 23.03 do sprawek:
     
 '''
 
-
-
-
 def task1(start: str, end: str, criteria: Criteria, start_time: time) -> None:
     data = load_csv()
 
     graph = Graph(data, start_time)
 
-    cost, path = shortest_path(graph, start, end)
+    begin_time = timeit.default_timer()
+    cost, path = dijkstra_shortest_path(graph, start, end)
+    end_time = timeit.default_timer()
     print_result(path, start_time)
+    print(f'Execution of Dijkstra algorithm took: {end_time - begin_time}')
 
 
+def task2(start: str, end: str, criteria: Criteria, start_time: time):
+    data = load_csv()
 
+    graph = Graph(data, start_time)
 
-def task2(graph):
+    begin_time = timeit.default_timer()
+    cost, path = astar_time_shortest_path(graph, start, end)
+    end_time = timeit.default_timer()
+
+    print_result(path, start_time)
+    print(f'Execution of A* algorithm took: {end_time - begin_time}')
+
     pass
 
 
 def main():
-    task1('KRZYKI', 'ZOO', Criteria.t, time(19, 58, 0))
-    # task2(graph)
+    # task1('KRZYKI', 'Ramiszów', Criteria.t, time(19, 58, 0))
+    task2('KRZYKI', 'Ramiszów', Criteria.t, time(19, 58, 0))
     #   def __new__(cls, hour=0, minute=0, second=0, microsecond=0, tzinfo=None, *, fold=0):
 
 
