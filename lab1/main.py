@@ -53,11 +53,11 @@ def main():
     begin = "Hynka"
     end = 'Malinowskiego'
 
-    # task1(begin, end, start_time)
+    task1(begin, end, start_time)
     task2(begin, end, start_time, Criteria.t, manhattan_distance)
     task2(begin, end, start_time, Criteria.t, euclidean_distance)
     task2(begin, end, start_time, Criteria.t, chebyshev_distance)
-    # task2(begin, end, start_time, Criteria.p, manhattan_distance)
+    task2(begin, end, start_time, Criteria.p, manhattan_distance)
 
 
 if __name__ == '__main__':

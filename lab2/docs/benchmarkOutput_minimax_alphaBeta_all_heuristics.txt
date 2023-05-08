@@ -1,0 +1,1011 @@
+C:\Users\kubas\Dev\SIIW\venv\Scripts\python.exe C:\Users\kubas\Dev\SIIW\lab2\main.py 
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_game_score" with depth 5, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|1|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 5, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (4, 5), (5, 2), (1, 4)], child_heuristic: None, heuristic: -2
+The execution took 0.0036972000000000116[s], visited nodes 80
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_corners" with depth 5, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 5, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (2, 5), (2, 6), (4, 5)], child_heuristic: None, heuristic: 31
+The execution took 0.010756899999999986[s], visited nodes 159
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_number_of_moves" with depth 5, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|2|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 5, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(4, 5), (5, 2)], child_heuristic: None, heuristic: -1
+The execution took 0.0373656[s], visited nodes 159
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_game_score" with depth 5, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|1|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 5, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (4, 5), (5, 2), (1, 4)], child_heuristic: None, heuristic: -2
+The execution took 0.005127199999999998[s], visited nodes 86
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_corners" with depth 5, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 5, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (2, 5), (2, 6), (4, 5)], child_heuristic: None, heuristic: 31
+The execution took 0.007215200000000005[s], visited nodes 82
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_number_of_moves" with depth 5, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|2|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 5, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(4, 5), (5, 2)], child_heuristic: None, heuristic: -1
+The execution took 0.0188131[s], visited nodes 87
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_game_score" with depth 6, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|1|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|1|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|1|2|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 6, current_player: -1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (2, 5), (2, 6), (1, 6), (0, 6)], child_heuristic: None, heuristic: 3
+The execution took 0.027682399999999996[s], visited nodes 849
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_corners" with depth 6, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 6, current_player: -1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 5), (2, 6), (2, 3)], child_heuristic: None, heuristic: 35
+The execution took 0.054039000000000004[s], visited nodes 849
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_number_of_moves" with depth 6, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|1|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 6, current_player: -1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (4, 5), (2, 3)], child_heuristic: None, heuristic: 2
+The execution took 0.2063854[s], visited nodes 849
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_game_score" with depth 6, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|1|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|1|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|1|2|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 6, current_player: -1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (2, 5), (2, 6), (1, 6), (0, 6)], child_heuristic: None, heuristic: 3
+The execution took 0.013437199999999927[s], visited nodes 244
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_corners" with depth 6, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 6, current_player: -1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 5), (2, 6), (2, 3)], child_heuristic: None, heuristic: 35
+The execution took 0.03725439999999991[s], visited nodes 332
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_number_of_moves" with depth 6, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|1|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 6, current_player: -1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (4, 5), (2, 3)], child_heuristic: None, heuristic: 2
+The execution took 0.07372060000000002[s], visited nodes 328
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_game_score" with depth 7, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|2|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 7, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -2
+The execution took 0.1634451[s], visited nodes 4905
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_corners" with depth 7, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 7, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (1, 2), (1, 3), (0, 1)], child_heuristic: None, heuristic: 33
+The execution took 0.31192530000000007[s], visited nodes 4905
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_number_of_moves" with depth 7, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|1|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|2|2|2|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 7, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -1
+The execution took 1.4564035[s], visited nodes 4905
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_game_score" with depth 7, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|0|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|2|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 7, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -2
+The execution took 0.05119000000000007[s], visited nodes 851
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_corners" with depth 7, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 7, current_player: 1, winner: None, moves_watcher bricked: False, moves_watcher unsymm_moves: [(2, 4), (1, 2), (1, 3), (0, 1)], child_heuristic: None, heuristic: 33
+The execution took 0.08598450000000035[s], visited nodes 947
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_number_of_moves" with depth 7, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|1|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|2|2|2|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 7, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -1
+The execution took 0.2113988[s], visited nodes 843
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_game_score" with depth 8, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|1|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 8, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 5
+The execution took 0.9771053999999997[s], visited nodes 32163
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_corners" with depth 8, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|1|2|0|0|1|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|2|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|2|0|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 8, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 37
+The execution took 2.115342[s], visited nodes 32163
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_number_of_moves" with depth 8, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 8, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 2
+The execution took 8.252956900000001[s], visited nodes 32163
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_game_score" with depth 8, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|1|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 8, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 5
+The execution took 0.1041685999999995[s], visited nodes 1738
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_corners" with depth 8, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|1|2|0|0|1|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|2|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|2|0|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 8, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 37
+The execution took 0.33505949999999984[s], visited nodes 4348
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_number_of_moves" with depth 8, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 8, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 2
+The execution took 0.7726989[s], visited nodes 3110
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_game_score" with depth 9, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|1|2|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 9, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -2
+The execution took 6.946328600000001[s], visited nodes 225363
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_corners" with depth 9, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|2|0|2|1|0|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|2|1|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 9, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 34
+The execution took 14.255939099999999[s], visited nodes 225363
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_number_of_moves" with depth 9, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|2|0|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|1|2|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 9, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 0
+The execution took 56.258135599999996[s], visited nodes 225363
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_game_score" with depth 9, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|1|2|1|1|1|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 9, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -2
+The execution took 0.3810056000000088[s], visited nodes 7452
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_corners" with depth 9, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|2|0|2|1|0|1|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|2|1|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 9, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 34
+The execution took 0.691578800000002[s], visited nodes 9171
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_number_of_moves" with depth 9, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|2|0|1|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|1|2|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 9, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 0
+The execution took 1.9263873999999959[s], visited nodes 8543
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_game_score" with depth 10, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|1|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 10, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 5
+The execution took 46.8136997[s], visited nodes 1713465
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_corners" with depth 10, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|1|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|2|1|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|2|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 10, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 38
+The execution took 98.5586103[s], visited nodes 1713465
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_number_of_moves" with depth 10, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|1|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 10, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 3
+The execution took 423.9767686[s], visited nodes 1713465
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_game_score" with depth 10, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|1|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 10, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 5
+The execution took 0.9594015999999783[s], visited nodes 21676
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_corners" with depth 10, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|1|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|2|1|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|1|2|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|1|0|0|2|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 10, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 38
+The execution took 2.1773779000000104[s], visited nodes 32416
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_number_of_moves" with depth 10, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|1|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|1|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|1|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 10, current_player: -1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 3
+The execution took 8.915808500000026[s], visited nodes 40056
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_game_score" with depth 11, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|1|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 11, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -2
+The execution took 376.6405275000001[s], visited nodes 13881665
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_corners" with depth 11, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|2|0|0|1|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|2|2|2|2|1|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 11, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 35
+The execution took 833.696422[s], visited nodes 13881665
+==================================================
+Running algorithm "minimax" and heuristic "heuristic_favour_number_of_moves" with depth 11, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|1|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|2|1|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|2|2|2|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 11, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -1
+The execution took 3528.1982388000006[s], visited nodes 13881665
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_game_score" with depth 11, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|2|0|0|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|2|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|0|2|1|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|1|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 11, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -2
+The execution took 3.9266497999997227[s], visited nodes 77610
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_corners" with depth 11, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|0|2|0|0|1|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|2|2|2|2|1|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|2|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|2|1|1|0|0|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|2|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 11, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: 35
+The execution took 9.786063900000045[s], visited nodes 128223
+==================================================
+Running algorithm "alpha_beta" and heuristic "heuristic_favour_number_of_moves" with depth 11, working... 
+Finished!
+   0 1 2 3 4 5 6 7 
+  +-+-+-+-+-+-+-+-+
+0 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+1 |0|0|1|2|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+2 |0|0|1|2|2|2|0|0|
+  +-+-+-+-+-+-+-+-+
+3 |0|0|0|1|2|2|1|0|
+  +-+-+-+-+-+-+-+-+
+4 |0|0|0|2|2|2|2|0|
+  +-+-+-+-+-+-+-+-+
+5 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+6 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+7 |0|0|0|0|0|0|0|0|
+  +-+-+-+-+-+-+-+-+
+Last node: 
+Turn number: 11, current_player: 1, winner: None, moves_watcher bricked: True, moves_watcher unsymm_moves: [], child_heuristic: None, heuristic: -1
+The execution took 30.325570299999526[s], visited nodes 127714
+
+Process finished with exit code 0
