@@ -1,0 +1,7 @@
+sentence_transformers
+pandas
+xlrd
+matplotlib
+
+
+
